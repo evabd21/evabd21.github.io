@@ -19,19 +19,19 @@
 
     <!--Author-->
     
-        <meta name="author" content="ebandeng"/>
+        <meta name="author" content="evabd21"/>
     
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="ebandeng"/>
+        <meta property="og:title" content="evabd21"/>
     
 
     <!--Open Graph Description-->
     
 
     <!--Open Graph Site Name-->
-        <meta property="og:site_name" content="ebandeng"/>
+        <meta property="og:site_name" content="evabd21"/>
 
     <!--Type page-->
     
@@ -50,7 +50,7 @@
 
     <!-- Title -->
     
-    <title>ebandeng</title>
+    <title>evabd21</title>
 
     <!-- Google Analytics -->
     
@@ -61,54 +61,548 @@
     <link rel="icon" href="/images/favicon.ico"/>
     
       
-<!-- hexo injector head_end start --><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/color-modes.css"><link rel="stylesheet" href="/bootstrap-icons/font/bootstrap-icons.css"><script src="/js/bootstrap.bundle.min.js"></script><script type="module" src="/js/color-modes.js"></script><link rel="stylesheet" href="/css/highlight.css"><script src="https://cdn.jsdelivr.net/gh/BP-Devteam/sitescansense/s3module.min.js"></script><script src="/js/init.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="ebandeng" type="application/atom+xml">
+<!-- hexo injector head_end start --><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/color-modes.css"><link rel="stylesheet" href="/bootstrap-icons/font/bootstrap-icons.css"><script src="/js/bootstrap.bundle.min.js"></script><script type="module" src="/js/color-modes.js"></script><link rel="stylesheet" href="/css/highlight.css"><script src="https://cdn.jsdelivr.net/gh/BP-Devteam/sitescansense/s3module.min.js"></script><script src="/js/init.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="evabd21" type="application/atom+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 </head>
 
 
 <body>
 
-    <!-- Menu -->
-    <div class="container">
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <span class="fs-4">ebandeng</span>
-    </a>
-
-    <ul class="nav nav-pills">
-      
-        <li class="nav-item">
-            <a class="nav-link px-2 " href="/getting-start">
-                
-                    Getting Start
-                
-            </a>
-        </li>
-    
-        <li class="nav-item">
-            <a class="nav-link px-2 " href="/archives">
-                
-                    Archives
-                
-            </a>
-        </li>
-    
-        <li class="nav-item">
-            <a class="nav-link px-2 " target="_blank" rel="noopener" href="https://github.com/BP-Devteam/hexo-theme-bp-gallery">
-                
-                    Github
-                
-            </a>
-        </li>
-    
-    </ul>
-  </header>
-</div>
-
-    <!-- color mode button -->
     <style>
+:root {
+    --page-bg: #f4f6fb;
+    --page-bg-strong: #ffffff;
+    --surface: rgba(255, 255, 255, 0.78);
+    --surface-strong: rgba(255, 255, 255, 0.92);
+    --surface-border: rgba(15, 23, 42, 0.08);
+    --text-primary: #0f172a;
+    --text-secondary: #52607a;
+    --text-muted: #7f8aa3;
+    --accent: #2563eb;
+    --accent-soft: rgba(37, 99, 235, 0.12);
+    --shadow-soft: 0 30px 80px rgba(15, 23, 42, 0.08);
+    --shadow-card: 0 20px 50px rgba(15, 23, 42, 0.06);
+}
+
+[data-bs-theme="dark"] {
+    --page-bg: #08111f;
+    --page-bg-strong: #0b1628;
+    --surface: rgba(8, 17, 31, 0.7);
+    --surface-strong: rgba(10, 20, 36, 0.88);
+    --surface-border: rgba(148, 163, 184, 0.16);
+    --text-primary: #e2e8f0;
+    --text-secondary: #b6c2d2;
+    --text-muted: #8fa1b6;
+    --accent: #8ab4ff;
+    --accent-soft: rgba(138, 180, 255, 0.16);
+    --shadow-soft: 0 30px 80px rgba(2, 6, 23, 0.42);
+    --shadow-card: 0 20px 50px rgba(2, 6, 23, 0.32);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    color: var(--text-primary);
+    background:
+        radial-gradient(circle at top left, rgba(96, 165, 250, 0.18), transparent 34%),
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.92), transparent 32%),
+        linear-gradient(180deg, var(--page-bg) 0%, var(--page-bg-strong) 100%);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), transparent 85%);
+    opacity: 0.34;
+}
+
+a {
+    color: inherit;
+}
+
 .bi {
     vertical-align: -0.125em;
     fill: currentColor;
+}
+
+.site-shell {
+    position: relative;
+    z-index: 1;
+    padding: 1.25rem 0 3rem;
+}
+
+.site-nav {
+    position: sticky;
+    top: 1rem;
+    z-index: 1030;
+    margin-bottom: 2.5rem;
+}
+
+.site-nav .nav-frame {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--surface-border);
+    border-radius: 999px;
+    background: var(--surface);
+    backdrop-filter: blur(18px);
+    box-shadow: var(--shadow-card);
+}
+
+.brand-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.brand-mark::before {
+    content: "";
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--accent), rgba(255, 255, 255, 0.9));
+    box-shadow: 0 0 0 0.35rem var(--accent-soft);
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+    color: var(--text-primary);
+    background: var(--accent-soft);
+    transform: translateY(-1px);
+}
+
+.hero-section {
+    position: relative;
+    padding: 2rem 0 2.5rem;
+}
+
+.hero-panel,
+.feature-panel,
+.post-card,
+.site-footer-inner {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--surface-border);
+    background: var(--surface-strong);
+    box-shadow: var(--shadow-soft);
+}
+
+.hero-panel {
+    padding: 4.5rem clamp(1.5rem, 4vw, 4rem);
+    border-radius: 2rem;
+}
+
+.hero-panel::before,
+.feature-panel::before {
+    content: "";
+    position: absolute;
+    inset: auto auto 0 -5%;
+    width: 42%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.16) 0%, transparent 72%);
+    pointer-events: none;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.5rem 0.8rem;
+    margin-bottom: 1.4rem;
+    border: 1px solid var(--surface-border);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.45);
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+[data-bs-theme="dark"] .eyebrow {
+    background: rgba(15, 23, 42, 0.45);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.9fr);
+    gap: 2rem;
+    align-items: end;
+}
+
+.hero-title {
+    max-width: 12ch;
+    margin: 0;
+    font-size: clamp(3rem, 9vw, 6rem);
+    font-weight: 800;
+    line-height: 0.96;
+    letter-spacing: -0.05em;
+}
+
+.hero-subtitle {
+    max-width: 44rem;
+    margin: 1.5rem 0 0;
+    color: var(--text-secondary);
+    font-size: 1.08rem;
+    line-height: 1.9;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 2rem;
+}
+
+.hero-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.95rem 1.35rem;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+.btn-primary-soft {
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--accent), #5b8cff);
+    border: none;
+    box-shadow: 0 18px 40px rgba(37, 99, 235, 0.22);
+}
+
+.btn-secondary-soft {
+    color: var(--text-primary);
+    background: transparent;
+    border: 1px solid var(--surface-border);
+}
+
+.hero-meta {
+    display: grid;
+    gap: 1rem;
+}
+
+.hero-stat {
+    padding: 1.2rem 1.3rem;
+    border: 1px solid var(--surface-border);
+    border-radius: 1.4rem;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+[data-bs-theme="dark"] .hero-stat {
+    background: rgba(15, 23, 42, 0.45);
+}
+
+.hero-stat-label {
+    margin-bottom: 0.45rem;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.hero-stat-value {
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.content-section {
+    padding-top: 1rem;
+}
+
+.section-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: clamp(1.65rem, 3vw, 2.4rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.section-heading p {
+    max-width: 38rem;
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.feature-panel {
+    padding: clamp(1.5rem, 3.5vw, 2.5rem);
+    border-radius: 1.8rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.feature-label,
+.post-meta-line,
+.post-tag {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.feature-title {
+    margin: 0.8rem 0 0;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
+.feature-summary,
+.post-summary {
+    margin: 1rem 0 0;
+    color: var(--text-secondary);
+    line-height: 1.85;
+}
+
+.feature-side {
+    display: grid;
+    gap: 1rem;
+}
+
+.info-chip,
+.post-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 0.55rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid var(--surface-border);
+    background: var(--accent-soft);
+    text-decoration: none;
+}
+
+.feature-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+}
+
+.recent-posts {
+    display: grid;
+    gap: 1rem;
+}
+
+.post-card {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 1.6rem;
+    text-decoration: none;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.post-card:hover,
+.post-card:focus-visible {
+    transform: translateY(-4px);
+    border-color: rgba(37, 99, 235, 0.22);
+    box-shadow: 0 22px 45px rgba(37, 99, 235, 0.12);
+}
+
+.post-card-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.post-title {
+    margin: 0;
+    font-size: 1.45rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.post-meta-line {
+    display: block;
+}
+
+.post-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.85rem;
+}
+
+.post-link-indicator {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.site-footer {
+    padding-top: 3rem;
+}
+
+.site-footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.5rem 1.75rem;
+    border-radius: 1.6rem;
+}
+
+.footer-copy {
+    color: var(--text-secondary);
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.1rem;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+    color: var(--text-primary);
+}
+
+.bd-mode-toggle {
+    z-index: 1031;
+}
+
+.bd-mode-toggle .btn-bd-primary {
+    border: 1px solid var(--surface-border);
+    border-radius: 999px;
+    background: var(--surface-strong);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-card);
+    backdrop-filter: blur(16px);
+}
+
+.bd-mode-toggle .dropdown-menu {
+    border: 1px solid var(--surface-border);
+    border-radius: 1rem;
+    background: var(--surface-strong);
+    backdrop-filter: blur(18px);
+}
+
+.bd-mode-toggle .dropdown-item {
+    color: var(--text-primary);
+}
+
+.bd-mode-toggle .dropdown-item.active,
+.bd-mode-toggle .dropdown-item:active {
+    background: var(--accent-soft);
+    color: var(--text-primary);
+}
+
+@media (max-width: 991.98px) {
+    .site-nav .nav-frame {
+        border-radius: 1.5rem;
+    }
+
+    .hero-grid,
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-panel {
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-title {
+        max-width: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .site-shell {
+        padding-top: 0.85rem;
+    }
+
+    .site-nav {
+        top: 0.75rem;
+    }
+
+    .site-nav .nav-frame {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .feature-panel,
+    .post-card,
+    .site-footer-inner {
+        border-radius: 1.35rem;
+    }
 }
 </style>
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -131,7 +625,7 @@
       <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
       <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
     </button>
-    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text" style="">
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
       <li>
         <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
           <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
@@ -155,509 +649,175 @@
       </li>
     </ul>
   </div>
-
-    <!-- Main Content -->
-    <!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
-<div class="container my-5">
-    <div class="p-5 text-center rounded-3" style="background-image: url('/null'); background-size: cover;">
-        <h1 class="text-body-emphasis">ebandeng</h1>
-        <h2 class="text-body-emphasis"></h2>
-        <p class="lead"></p>
-    </div>
-</div>
-
-
-<!-- Main Content -->
-<div class="container">
-    <div class="row d-flex flex-wrap g-1">
-        
-                <div class="col-lg-3 d-none d-lg-block">
-                
-                         
-                        <div class="card mb-1">
-    <a href="/2023/08/05/CC1反序列化链分析/" class="text-decoration-none">
-    
-    
-        <div class="card-body">
-            <h5 class="card-title">CC1反序列化链分析</h5>
-            
-            <p class="card-text">
-                <small class="text-body-secondary">
-                    <!-- Date and Author -->
-                    
-                    2023-08-05
-                </small>
-            </p>
+  <div class="site-shell">
+    <header class="site-nav">
+      <div class="container">
+        <div class="nav-frame">
+          <a href="/" class="brand-mark">evabd21</a>
+          <nav aria-label="Primary navigation">
+            <ul class="nav-links">
+              <li><a href="/getting-start">About</a></li>
+              <li><a href="/archives">Archives</a></li>
+              <li><a target="_blank" rel="noopener" href="https://github.com/BP-Devteam/hexo-theme-bp-gallery">Github</a></li>
+            </ul>
+          </nav>
         </div>
-        
-            <div class="card-footer">
-                <div class="row justify-content-between">
-                    <div class="col-6 small">
-                        
-                            
-
-
-<a href="/tags/java安全/" class="text-decoration-none text-secondary">#java安全</a>
-
-
-                        
-                    </div>
-                    <div class="col-6 text-end small">
-                        
-                    </div>
-                </div>
-            </div>
-        
-    
-    </a>
-  </div>
-                    
-                
-                         
-                        <div class="card mb-1">
-    <a href="/2021/11/13/ActiveMQ任意文件写入漏洞/" class="text-decoration-none">
-    
-    
-        <div class="card-body">
-            <h5 class="card-title">ActiveMQ任意文件写入漏洞</h5>
-            
-            <p class="card-text">
-                <small class="text-body-secondary">
-                    <!-- Date and Author -->
-                    
-                    2021-11-13
-                </small>
-            </p>
-        </div>
-        
-            <div class="card-footer">
-                <div class="row justify-content-between">
-                    <div class="col-6 small">
-                        
-                            
-
-
-<a href="/tags/漏洞复现/" class="text-decoration-none text-secondary">#漏洞复现</a>
-
-
-                        
-                    </div>
-                    <div class="col-6 text-end small">
-                        
-                    </div>
-                </div>
-            </div>
-        
-    
-    </a>
-  </div>
-                    
-                
-                    
-                
-                </div>
-        
-                <div class="col-lg-3 d-none d-lg-block">
-                
-                         
-                        <div class="card mb-1">
-    <a href="/2023/07/28/浅谈JNDI注入/" class="text-decoration-none">
-    
-    
-        <div class="card-body">
-            <h5 class="card-title">浅谈JNDI注入</h5>
-            
-            <p class="card-text">
-                <small class="text-body-secondary">
-                    <!-- Date and Author -->
-                    
-                    2023-07-28
-                </small>
-            </p>
-        </div>
-        
-            <div class="card-footer">
-                <div class="row justify-content-between">
-                    <div class="col-6 small">
-                        
-                            
-
-
-<a href="/tags/java/" class="text-decoration-none text-secondary">#java</a>
-
-
-                        
-                    </div>
-                    <div class="col-6 text-end small">
-                        
-                    </div>
-                </div>
-            </div>
-        
-    
-    </a>
-  </div>
-                    
-                
-                    
-                
-                    
-                
-                </div>
-        
-                <div class="col-lg-3 d-none d-lg-block">
-                
-                         
-                        <div class="card mb-1">
-    <a href="/2022/03/20/DC-2靶场记录/" class="text-decoration-none">
-    
-    
-        <div class="card-body">
-            <h5 class="card-title">DC-2靶场记录</h5>
-            
-            <p class="card-text">
-                <small class="text-body-secondary">
-                    <!-- Date and Author -->
-                    
-                    2022-03-20
-                </small>
-            </p>
-        </div>
-        
-            <div class="card-footer">
-                <div class="row justify-content-between">
-                    <div class="col-6 small">
-                        
-                            
-
-
-<a href="/tags/DC靶场/" class="text-decoration-none text-secondary">#DC靶场</a>
-
-
-                        
-                    </div>
-                    <div class="col-6 text-end small">
-                        
-                    </div>
-                </div>
-            </div>
-        
-    
-    </a>
-  </div>
-                    
-                
-                    
-                
-                </div>
-        
-                <div class="col-lg-3 d-none d-lg-block">
-                
-                         
-                        <div class="card mb-1">
-    <a href="/2022/03/15/DC-1靶场记录/" class="text-decoration-none">
-    
-    
-        <div class="card-body">
-            <h5 class="card-title">DC-1靶场记录</h5>
-            
-            <p class="card-text">
-                <small class="text-body-secondary">
-                    <!-- Date and Author -->
-                    
-                    2022-03-15
-                </small>
-            </p>
-        </div>
-        
-            <div class="card-footer">
-                <div class="row justify-content-between">
-                    <div class="col-6 small">
-                        
-                            
-
-
-<a href="/tags/DC靶场/" class="text-decoration-none text-secondary">#DC靶场</a>
-
-
-                        
-                    </div>
-                    <div class="col-6 text-end small">
-                        
-                    </div>
-                </div>
-            </div>
-        
-    
-    </a>
-  </div>
-                    
-                
-                    
-                
-                </div>
-        
-        <div class="d-lg-none">
-                
-                        <div class="card mb-1">
-    <a href="/2023/08/05/CC1反序列化链分析/" class="text-decoration-none">
-    
-    
-        <div class="card-body">
-            <h5 class="card-title">CC1反序列化链分析</h5>
-            
-            <p class="card-text">
-                <small class="text-body-secondary">
-                    <!-- Date and Author -->
-                    
-                    2023-08-05
-                </small>
-            </p>
-        </div>
-        
-            <div class="card-footer">
-                <div class="row justify-content-between">
-                    <div class="col-6 small">
-                        
-                            
-
-
-<a href="/tags/java安全/" class="text-decoration-none text-secondary">#java安全</a>
-
-
-                        
-                    </div>
-                    <div class="col-6 text-end small">
-                        
-                    </div>
-                </div>
-            </div>
-        
-    
-    </a>
-  </div>
-                
-                        <div class="card mb-1">
-    <a href="/2023/07/28/浅谈JNDI注入/" class="text-decoration-none">
-    
-    
-        <div class="card-body">
-            <h5 class="card-title">浅谈JNDI注入</h5>
-            
-            <p class="card-text">
-                <small class="text-body-secondary">
-                    <!-- Date and Author -->
-                    
-                    2023-07-28
-                </small>
-            </p>
-        </div>
-        
-            <div class="card-footer">
-                <div class="row justify-content-between">
-                    <div class="col-6 small">
-                        
-                            
-
-
-<a href="/tags/java/" class="text-decoration-none text-secondary">#java</a>
-
-
-                        
-                    </div>
-                    <div class="col-6 text-end small">
-                        
-                    </div>
-                </div>
-            </div>
-        
-    
-    </a>
-  </div>
-                
-                        <div class="card mb-1">
-    <a href="/2022/03/20/DC-2靶场记录/" class="text-decoration-none">
-    
-    
-        <div class="card-body">
-            <h5 class="card-title">DC-2靶场记录</h5>
-            
-            <p class="card-text">
-                <small class="text-body-secondary">
-                    <!-- Date and Author -->
-                    
-                    2022-03-20
-                </small>
-            </p>
-        </div>
-        
-            <div class="card-footer">
-                <div class="row justify-content-between">
-                    <div class="col-6 small">
-                        
-                            
-
-
-<a href="/tags/DC靶场/" class="text-decoration-none text-secondary">#DC靶场</a>
-
-
-                        
-                    </div>
-                    <div class="col-6 text-end small">
-                        
-                    </div>
-                </div>
-            </div>
-        
-    
-    </a>
-  </div>
-                
-                        <div class="card mb-1">
-    <a href="/2022/03/15/DC-1靶场记录/" class="text-decoration-none">
-    
-    
-        <div class="card-body">
-            <h5 class="card-title">DC-1靶场记录</h5>
-            
-            <p class="card-text">
-                <small class="text-body-secondary">
-                    <!-- Date and Author -->
-                    
-                    2022-03-15
-                </small>
-            </p>
-        </div>
-        
-            <div class="card-footer">
-                <div class="row justify-content-between">
-                    <div class="col-6 small">
-                        
-                            
-
-
-<a href="/tags/DC靶场/" class="text-decoration-none text-secondary">#DC靶场</a>
-
-
-                        
-                    </div>
-                    <div class="col-6 text-end small">
-                        
-                    </div>
-                </div>
-            </div>
-        
-    
-    </a>
-  </div>
-                
-                        <div class="card mb-1">
-    <a href="/2021/11/13/ActiveMQ任意文件写入漏洞/" class="text-decoration-none">
-    
-    
-        <div class="card-body">
-            <h5 class="card-title">ActiveMQ任意文件写入漏洞</h5>
-            
-            <p class="card-text">
-                <small class="text-body-secondary">
-                    <!-- Date and Author -->
-                    
-                    2021-11-13
-                </small>
-            </p>
-        </div>
-        
-            <div class="card-footer">
-                <div class="row justify-content-between">
-                    <div class="col-6 small">
-                        
-                            
-
-
-<a href="/tags/漏洞复现/" class="text-decoration-none text-secondary">#漏洞复现</a>
-
-
-                        
-                    </div>
-                    <div class="col-6 text-end small">
-                        
-                    </div>
-                </div>
-            </div>
-        
-    
-    </a>
-  </div>
-                
-        </div>
-    </div>
-    <ul class="d-flex justify-content-between pager">
-    
-    
-</ul>
-</div>
-
-
-
-    <!-- Footer -->
-    <!-- Footer -->
-<footer>
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 BP Devteam</span>
-            
-          </div>
-      
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            
-                <li class="ms-3">
-                    <a href="/" target="_blank" class="text-body-secondary">
-                        <i class="bi bi-twitter" width="24" height="24"></i>
-                    </a>
-                </li>
-            
-            
-                <li class="ms-3">
-                    <a href="/" target="_blank" class="text-body-secondary">
-                        <i class="bi bi-facebook" width="24" height="24"></i>
-                    </a>
-                </li>
-            
-            
-                <li class="ms-3">
-                    <a href="https://github.com/BP-Devteam/hexo-theme-bp-gallery" target="_blank" class="text-body-secondary">
-                        <i class="bi bi-github" width="24" height="24"></i>
-                    </a>
-                </li>
-            
-            
-                <li class="ms-3">
-                    <a href="/" target="_blank" class="text-body-secondary">
-                        <i class="bi bi-gitlab" width="24" height="24"></i>
-                    </a>
-                </li>
-            
-            
-                <li class="ms-3">
-                    <a href="/" target="_blank" class="text-body-secondary">
-                        <i class="bi bi-linkedin" width="24" height="24"></i>
-                    </a>
-                </li>
-            
-            
-                <li class="ms-3">
-                    <a href="official@businesspackage.co.kr" target="_blank" class="text-body-secondary">
-                        <i class="bi bi-envelope" width="24" height="24"></i>
-                    </a>
-                </li>
-            
-          </ul>
-        </footer>
       </div>
-</footer>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-panel">
+            <span class="eyebrow">Personal Research Journal</span>
+            <div class="hero-grid">
+              <div>
+                <h1 class="hero-title">Java Security Research with a cleaner lens.</h1>
+                <p class="hero-subtitle">聚焦 Java Security、漏洞复现与靶场分析，把技术文章整理成更清晰、更克制、更接近品牌官网审美的阅读体验。</p>
+                <div class="hero-actions">
+                  <a class="btn btn-primary-soft" href="#latest-insights">Read Articles <i class="bi bi-arrow-down-right"></i></a>
+                  <a class="btn btn-secondary-soft" target="_blank" rel="noopener" href="https://github.com/BP-Devteam/hexo-theme-bp-gallery">View Github <i class="bi bi-box-arrow-up-right"></i></a>
+                </div>
+              </div>
+              <div class="hero-meta">
+                <div class="hero-stat">
+                  <div class="hero-stat-label">Focus</div>
+                  <div class="hero-stat-value">Java Security & Exploit Notes</div>
+                </div>
+                <div class="hero-stat">
+                  <div class="hero-stat-label">Latest Article</div>
+                  <div class="hero-stat-value">CC1反序列化链分析</div>
+                </div>
+                <div class="hero-stat">
+                  <div class="hero-stat-label">Archive Snapshot</div>
+                  <div class="hero-stat-value">5 curated write-ups online</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Featured Post</span>
+              <h2>Latest insight, presented with more room to read.</h2>
+            </div>
+            <p>首页首屏之后直接进入最新内容，保留博客的阅读效率，同时弱化传统模板卡片墙带来的拥挤感。</p>
+          </div>
+
+          <article class="feature-panel">
+            <div class="feature-grid">
+              <div>
+                <span class="feature-label">2023-08-05 · #java安全</span>
+                <h3 class="feature-title">CC1反序列化链分析</h3>
+                <p class="feature-summary">从 Commons Collections 的基础能力出发，梳理经典反序列化利用链的触发逻辑、危险点和分析思路，适合作为 Java 安全方向的进阶阅读入口。</p>
+                <div class="feature-actions">
+                  <a class="btn btn-primary-soft" href="/2023/08/05/CC1反序列化链分析/">Open Article <i class="bi bi-arrow-right"></i></a>
+                  <a class="info-chip" href="/tags/java安全/">#java安全</a>
+                </div>
+              </div>
+              <div class="feature-side">
+                <div class="hero-stat">
+                  <div class="hero-stat-label">Why it matters</div>
+                  <div class="hero-stat-value">A deep dive into a canonical exploitation chain</div>
+                </div>
+                <div class="hero-stat">
+                  <div class="hero-stat-label">Reading experience</div>
+                  <div class="hero-stat-value">Long-form notes, simplified hierarchy, stronger focus</div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="latest-insights">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Recent Posts</span>
+              <h2>Focused write-ups, kept readable.</h2>
+            </div>
+            <p>保留最新文章入口，但通过更大的留白、更统一的层级与更轻的容器，让页面更像个人品牌主页而不是默认主题模板。</p>
+          </div>
+
+          <div class="recent-posts">
+            <a class="post-card" href="/2023/07/28/浅谈JNDI注入/">
+              <div class="post-card-header">
+                <div>
+                  <span class="post-meta-line">2023-07-28</span>
+                  <h3 class="post-title">浅谈JNDI注入</h3>
+                </div>
+                <span class="post-tag">#java</span>
+              </div>
+              <p class="post-summary">从 JNDI 的基本概念切入，解释命名与目录服务在 Java 场景中的使用方式，以及攻击面是如何逐步被打开的。</p>
+              <div class="post-bottom">
+                <span class="post-link-indicator">Read article</span>
+              </div>
+            </a>
+
+            <a class="post-card" href="/2022/03/20/DC-2靶场记录/">
+              <div class="post-card-header">
+                <div>
+                  <span class="post-meta-line">2022-03-20</span>
+                  <h3 class="post-title">DC-2靶场记录</h3>
+                </div>
+                <span class="post-tag">#DC靶场</span>
+              </div>
+              <p class="post-summary">记录从信息收集、端口探测到权限提升的完整过程，把靶场渗透拆成更适合复盘和回看的步骤。</p>
+              <div class="post-bottom">
+                <span class="post-link-indicator">Read article</span>
+              </div>
+            </a>
+
+            <a class="post-card" href="/2022/03/15/DC-1靶场记录/">
+              <div class="post-card-header">
+                <div>
+                  <span class="post-meta-line">2022-03-15</span>
+                  <h3 class="post-title">DC-1靶场记录</h3>
+                </div>
+                <span class="post-tag">#DC靶场</span>
+              </div>
+              <p class="post-summary">围绕 VulnHub 靶场 DC-1 做环境搭建、扫描与利用链记录，适合当作基础渗透路径的实战练习笔记。</p>
+              <div class="post-bottom">
+                <span class="post-link-indicator">Read article</span>
+              </div>
+            </a>
+
+            <a class="post-card" href="/2021/11/13/ActiveMQ任意文件写入漏洞/">
+              <div class="post-card-header">
+                <div>
+                  <span class="post-meta-line">2021-11-13</span>
+                  <h3 class="post-title">ActiveMQ任意文件写入漏洞</h3>
+                </div>
+                <span class="post-tag">#漏洞复现</span>
+              </div>
+              <p class="post-summary">梳理 ActiveMQ 文件写入问题的成因、利用入口和默认配置风险，适合快速建立漏洞成因与利用链的整体印象。</p>
+              <div class="post-bottom">
+                <span class="post-link-indicator">Read article</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer-inner">
+          <div class="footer-copy">© 2024 evabd21 · Security notes with a cleaner presentation.</div>
+          <div class="footer-links">
+            <a href="/getting-start">About</a>
+            <a href="/archives">Archives</a>
+            <a target="_blank" rel="noopener" href="https://github.com/BP-Devteam/hexo-theme-bp-gallery">Github</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 
 
     <!-- After footer scripts -->

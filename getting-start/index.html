@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Page not found.">
-  <title>404 - evabd21</title>
+  <meta name="description" content="About evabd21 and how to navigate the research notes.">
+  <title>About - evabd21</title>
   <link rel="icon" href="/images/favicon.ico"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -16,7 +16,7 @@
   <script src="/js/bootstrap.bundle.min.js"></script>
   <script type="module" src="/js/color-modes.js"></script>
 </head>
-<body class="brand-page brand-page-404">
+<body class="brand-page brand-page-standalone">
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
     <symbol id="check2" viewBox="0 0 16 16">
       <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
@@ -79,17 +79,49 @@
     </header>
 
     <main class="page-shell">
+      <section class="page-header-section">
+        <div class="container">
+          <div class="page-header-panel">
+            <span class="page-kicker">About</span>
+            <h1 class="page-title">A cleaner entry point into these research notes.</h1>
+            <p class="page-description">这里不是传统的个人简介页，而是整个站点的阅读导览。内容聚焦 Java Security、漏洞复现与靶场分析，尽量把每篇笔记整理成更容易快速扫读、复盘和回看的长期资料。</p>
+          </div>
+        </div>
+      </section>
+
       <section class="page-content-section">
         <div class="container">
-          <div class="not-found-shell">
-            <div class="not-found-inner">
-              <div class="page-kicker">Not Found</div>
-              <div class="not-found-code">404</div>
-              <h1 class="not-found-title">This page has drifted out of range.</h1>
-              <p class="not-found-description">你访问的页面不存在，或者已经被移动到别的位置。可以先回到首页继续浏览，或者直接从归档页进入全部文章。</p>
-              <div class="standalone-actions justify-content-center">
-                <a class="brand-button" href="/">Back Home <i class="bi bi-house-door"></i></a>
-                <a class="brand-button-secondary" href="/archives">Open Archive <i class="bi bi-arrow-right"></i></a>
+          <div class="standalone-shell">
+            <div class="standalone-grid">
+              <div class="standalone-copy">
+                <h2>What you will find here</h2>
+                <p>这个站点主要记录三类内容：Java 安全研究、真实漏洞复现、以及靶场渗透过程。写法上尽量减少模板感，保留技术博客需要的密度，同时提升层级清晰度和阅读节奏。</p>
+                <p>如果你第一次来到这里，建议先从最新文章和归档页进入，再根据标签去追踪某一类主题。</p>
+                <ul>
+                  <li>用长文笔记梳理漏洞原理、利用链和关键危险点</li>
+                  <li>用归档和标签快速回看某个时间段或某个主题</li>
+                  <li>把零散文章组织成更接近个人品牌站点的连续体验</li>
+                </ul>
+
+                <div class="standalone-actions">
+                  <a class="brand-button" href="/archives">Browse Archive <i class="bi bi-arrow-right"></i></a>
+                  <a class="brand-button-secondary" href="/2023/08/05/CC1反序列化链分析/">Read Featured Note <i class="bi bi-box-arrow-up-right"></i></a>
+                </div>
+              </div>
+
+              <div class="standalone-side">
+                <div class="info-panel">
+                  <div class="info-panel-label">Focus</div>
+                  <div class="info-panel-value">Java Security, deserialization chains, JNDI, exploit notes, and targeted lab write-ups.</div>
+                </div>
+                <div class="info-panel">
+                  <div class="info-panel-label">Reading Path</div>
+                  <div class="info-panel-value">Home for overview, Archives for chronology, Tags for topic clusters, and article pages for long-form research notes.</div>
+                </div>
+                <div class="info-panel">
+                  <div class="info-panel-label">Current Snapshot</div>
+                  <div class="info-panel-value">5 published write-ups online, with a stronger emphasis on cleaner structure and calmer visual hierarchy.</div>
+                </div>
               </div>
             </div>
           </div>
